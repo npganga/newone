@@ -10,6 +10,7 @@ public static void main(String[] args){
 	/*for(int i=0;i<size;i++){
 		array[i]=in.nextInt();
 	}*/
+	if(size>1){
 	int count=0;
 	while(size>=1){
 		size=size/2;
@@ -17,6 +18,10 @@ public static void main(String[] args){
 	}
 	int d=(int)Math.pow(2,count-1);
 	System.out.println(d);
+	}
+	else{
+		System.out.println("invalid input");
+	}
 	in.close();
 }
 }
